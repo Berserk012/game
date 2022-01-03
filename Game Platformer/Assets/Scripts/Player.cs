@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float moveForce = 10f;
+    private float moveForce = 3f;
 
     [SerializeField]
     private float jumpForce = 11f;
@@ -18,9 +18,6 @@ public class Player : MonoBehaviour
 
     private Animator anim;
     private string WALK_ANIMATION = "IsWalking";
-
-    private bool isGrounded;
-    private string GROUND_TAG = "Ground";
 
     private void Awake()
     {
@@ -42,11 +39,6 @@ public class Player : MonoBehaviour
     {
         PlayerMovekeyboard();
         PlayerAnim();
-    }
-
-    void FixedUpdate()
-    {
-        PlayerJump();
     }
 
     void PlayerMovekeyboard()
@@ -73,23 +65,6 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetBool(WALK_ANIMATION, false);
-        }
-    }
-
-    void PlayerJump()
-    {
-        if (Input.GetButton("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag(GROUND_TAG))
-        {
-            isGrounded = true;
         }
     }
 }
