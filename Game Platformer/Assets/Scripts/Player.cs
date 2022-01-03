@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private float moveForce = 3f;
 
     [SerializeField]
-    private float jumpForce = 11f;
+    private float jumpForce = 5f;
 
     private float movementX;
 
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
         {
             anim.SetBool(WALK_ANIMATION, true);
             sr.flipX = false;
+
         }
         else if (movementX < 0)
         {
