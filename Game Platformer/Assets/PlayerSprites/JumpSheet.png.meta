@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: 20daa800a641d9e4cae18a06630db1ef
+guid: b36567e7ccb590c4aa75cabacdea31bf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6947315469438842598
+    second: JumpSheet_0
+  - first:
+      213: 5988670041877617365
+    second: JumpSheet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -36,22 +42,22 @@ TextureImporter:
     aniso: 1
     mipBias: 0
     wrapU: 1
-    wrapV: 0
-    wrapW: 0
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 169, y: 0, z: 202, w: 114}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -61,7 +67,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -87,78 +93,53 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Tizen
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline:
-    - - {x: 38, y: 16}
-      - {x: -35, y: 16}
-      - {x: -90, y: -47}
-      - {x: -90, y: -95}
-      - {x: -21, y: -124}
-      - {x: 36, y: -124}
-      - {x: 37, y: -122}
-      - {x: 56, y: -39}
-      - {x: 56, y: 9}
-    physicsShape:
-    - - {x: 13.337189, y: 14.999985}
-      - {x: -15, y: 15}
-      - {x: -16, y: 7}
-      - {x: -32, y: 7}
-      - {x: -51, y: -14}
-      - {x: -63, y: -36}
-      - {x: -89, y: -67}
-      - {x: -89, y: -87}
-      - {x: -83, y: -75}
-      - {x: -73, y: -82}
-      - {x: -55, y: -82}
-      - {x: -48, y: -89}
-      - {x: -29, y: -90}
-      - {x: -22, y: -123}
-      - {x: 38, y: -123}
-      - {x: 34, y: -79}
-      - {x: 48, y: -57}
-      - {x: 50, y: -47}
-      - {x: 38, y: -33}
-      - {x: 52, y: -26}
-      - {x: 55, y: 6}
-      - {x: 36, y: -1}
+    sprites:
+    - serializedVersion: 2
+      name: JumpSheet_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 6
+        width: 141
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e67a7a6c92d96060800000000000000
+      internalID: 6947315469438842598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpSheet_1
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 7
+        width: 141
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da932b7ca70c1350800000000000000
+      internalID: 5988670041877617365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
