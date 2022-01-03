@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     private Animator anim;
     private string WALK_ANIMATION = "IsWalking";
+    private string JUMP_ANIMATION = "InAir";
 
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
@@ -84,6 +85,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            anim.SetBool(JUMP_ANIMATION, true);
         }
     }
 
@@ -92,6 +94,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+            anim.SetBool(JUMP_ANIMATION, false);
         }
     }
 }
