@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float moveForce = 10f;
+    private float moveForce = 3f;
 
     [SerializeField]
     private float jumpForce = 11f;
@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerMovekeyboard();
+        PlayerAnim();
     }
 
     void PlayerMovekeyboard()
@@ -46,5 +47,24 @@ public class Player : MonoBehaviour
 
         transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
 
+    }
+
+
+    void PlayerAnim()
+    {
+        if (movementX > 0)
+        {
+            anim.SetBool(WALK_ANIMATION, true);
+            sr.flipX = false;
+        }
+        else if (movementX < 0)
+        {
+            anim.SetBool(WALK_ANIMATION, true);
+            sr.flipX = true;
+        }
+        else
+        {
+            anim.SetBool(WALK_ANIMATION, false);
+        }
     }
 }
